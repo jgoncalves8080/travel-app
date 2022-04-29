@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const BannerContainer = styled.div`
-    position: relative;
     height: 100vh;
     width: 100%;
     padding-left: 10%;
@@ -12,7 +11,7 @@ export const BannerContainer = styled.div`
     gap: 25px;
     
     background-color: ${({theme})=>theme.colors.neutral.light};
-    background-image: url('../../image/banner.jpg');
+    background-image: url("../../image/banner.jpg");
     background-position:center;
     background-size: cover;
     color:${({theme})=>theme.colors.neutral.white};
