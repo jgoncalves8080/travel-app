@@ -1,9 +1,11 @@
-import React from 'react';
+import {StyledButton} from './styles'
 
-// import { Container } from './styles';
-
-function Button() {
-  return <div />;
+function Button({value}) {
+  return (
+    <StyledButton>
+      {value}
+    </StyledButton>
+  );
 }
 
 export default Button;
