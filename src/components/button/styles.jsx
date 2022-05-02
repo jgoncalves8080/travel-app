@@ -1,9 +1,3 @@
 import styled from 'styled-components';
 
-export const StyledButton = styled.button`
-    border:none;
-    color: inherit;
-    padding: ${({theme})=>theme.spacings.xxxsmall};
-    border-radius: ${({theme})=>theme.border.radius};
-    background-color: ${({theme})=>theme.colors.primary.green};
-`;
+export const Container = styled.div``;

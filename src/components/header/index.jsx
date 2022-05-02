@@ -1,26 +1,11 @@
 import React from 'react';
-import Button from '../button';
 
-import { Container,NavBar } from './styles';
+import { Container } from './styles';
 
 function Header() {
   return (
     <Container>
-      <NavBar>
-        <ul>
-          <li>Home</li>
-          <li>Salões</li>
-          <li>Sobre</li>
-        </ul>
-
-        <div>
-          <Button value='Criar Conta'/>
-          <input 
-            type='search' 
-            placeholder='Procurar...'
-          />
-        </div>
-      </NavBar>
+      <h1>Hello</h1>
     </Container>
   );
 }
