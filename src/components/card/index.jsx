@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Container, Point, Title } from './styles';
+import { Button, Container, Point, Title, TopSide,BottomSide,Star, Row1, Row2 } from './styles';
+
 
 const card =
   {
@@ -15,20 +16,23 @@ const card =
 function Card() {
   return(
     <Container>
-          <div className="top">
+          <TopSide>
             <Title>{card.name}</Title>
-            <Point>{card.point} start</Point>
-          </div>
-          <div className="bottom">
-            <div className="row1">
+            <Point>
+              {card.point}
+              <Star/>
+            </Point>
+          </TopSide>
+          <BottomSide>
+            <Row1 >
               <span>{card.local}</span>
               <Button>Reservar</Button>
-            </div>
-            <div className="row2">
+            </Row1>
+            <Row2>
               <p>{card.descripition}</p>
               <span>Apartir de {card.price}</span>
-            </div>
-          </div>
+            </Row2>
+          </BottomSide>
     </Container>
   );
 }
