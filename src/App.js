@@ -10,7 +10,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header theme={theme} />
-      <SalonSection/>
+      <Card/>
     </ThemeProvider>
   );
 }
