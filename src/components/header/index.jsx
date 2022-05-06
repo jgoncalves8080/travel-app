@@ -15,10 +15,6 @@ function Header() {
 
         <div>
           <Button value='Criar Conta'/>
-          <input 
-            type='search' 
-            placeholder='Procurar...'
-          />
         </div>
       </NavBar>
     </Container>

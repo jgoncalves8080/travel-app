@@ -25,12 +25,12 @@ export const NavBar = styled.nav`
     list-style: none;
 
     li{
-      padding: 2px 5px;
+      padding: 3px 8px;
       cursor: pointer;
       border-radius: ${({theme})=>theme.border.radius};
-    }
-    li:hover{
-      background-color: ${({theme})=>theme.colors.neutral.light};
+      &:hover{
+        background-color: #fff5;
+      }
     }
   }
 
