@@ -17,7 +17,7 @@ export const theme = {
   },
   border: {
     solid: (color) => `0.1rem solid ${color}`,
-    radius: '0.25rem',
+    radius: '0.62rem',
   },
   opactity: 0.2,
   font: {
