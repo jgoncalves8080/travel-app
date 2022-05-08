@@ -14,5 +14,6 @@ export default createGlobalStyle`
   body {
     height: 100%;
     background: #F5F5F5;
+    font-family: ${({theme})=>theme.font.family};
   }
 `;
