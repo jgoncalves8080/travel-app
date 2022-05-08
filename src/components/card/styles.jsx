@@ -15,15 +15,36 @@ export const Container = styled.div`
 `;
 
 export const TopSide = styled.div`
-    background-image: url('https://cdn.pixabay.com/photo/2019/11/11/15/32/barber-4618697_960_720.jpg');
-    background-position: center;
-    background-size: cover;
     border-radius: 1rem 1rem 0 0;
     height: 17.5rem;
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: end;
+    position: relative;
+    overflow: hidden;
+`;
+
+export const Image = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    img{
+        width: 100%;
+    }
+
+`;
+
+export const Shadow = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 40%, transparent 60%); 
+    height: 100%;
+    z-index: 1;
 `;
 
 export const BottomSide = styled.div`
@@ -47,7 +68,7 @@ export const Row2 = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: end;
-    padding-top: 2.0rem;
+    padding-top: 2rem;
     gap:2rem;
 
     p{
@@ -56,7 +77,7 @@ export const Row2 = styled.div`
     }
 
     span{
-        font-weight: bold;
+        font-weight: ${({theme})=>theme.font.bold};  
         font-size: ${({theme})=>theme.font.sizings.large};
         color:#434343;
     }
@@ -72,17 +93,22 @@ export const Button = styled.button`
 `;
 
 export const Point = styled.div`
-    font-size: ${({theme})=>theme.font.sizings.xsmall};
-    border-radius: 1.6rem;
-    background: linear-gradient(91.97deg, #F8A170 14.73%, #FFCD61 97.52%);;
-    color:${({theme})=>theme.colors.neutral.white};
-    font-size: ${({theme})=>theme.font.sizings.xsmall};
-    padding: .3rem;
+    
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
+    padding: 0.5rem 1rem;  
+    border-radius: 1.6rem;
+    z-index: 1;
+    
+    ${({theme})=>css`
+        background: linear-gradient(91.97deg,
+            ${theme.colors.secondary.yellow} 14.73%, #FFCD61 97.52%);
+
+        color:${theme.colors.neutral.white};
+        font-size: ${theme.font.sizings.xsmall};
+        font-weight: ${theme.font.bold};  
+    `}
 `;
 
 export const Star = styled(AiFillStar)`
@@ -92,5 +118,6 @@ export const Star = styled(AiFillStar)`
 export const Title = styled.h2`
     color:${({theme})=>theme.colors.neutral.white};
     font-size: ${({theme})=>theme.font.sizings.xlarge};
-    font-weight: normal;
+    font-weight: ${({theme})=>theme.font.normal};
+    z-index:1;
 `;

@@ -1,11 +1,12 @@
 import React from 'react';
-import { Button, Container, Point, Title, TopSide,BottomSide,Star, Row1, Row2 } from './styles';
+import { Button, Container, Point, Title, TopSide,
+        BottomSide,Star, Row1, Row2,Image,Shadow } from './styles';
 
 
 const card =
   {
     id:0,
-    url:'https://cdn.pixabay.com/photo/2019/11/11/15/32/barber-4618697_960_720.jpg',
+    url:'https://www.versum.com/m/br/wp-content/uploads/sites/8/2020/01/layout-salao-de-beleza.jpg',
     name:'Salão Crespolindo',
     point:4.8,
     local:'Maianga, Sagrada Família',
@@ -17,6 +18,10 @@ function Card() {
   return(
     <Container>
           <TopSide>
+            <Image>
+              <img src={card.url} alt="Salão de beleza" />
+              <Shadow/>
+            </Image>
             <Title>{card.name}</Title>
             <Point>
               {card.point}
