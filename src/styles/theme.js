@@ -27,6 +27,7 @@ export const theme = {
     family:
       "Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     sizings: {
+      xxsmall: '0.95rem',
       xsmall: '1.2rem',
       small: '1.4rem',
       medium: '1.6rem',
